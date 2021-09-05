@@ -242,6 +242,54 @@
             </pre>
         </div>
     </body>
-</html>
 
-
+</html>
+<script>
+    var foo = {
+       name  : 'foo',
+       age   : 30,
+       array : [1,4,5,5],
+       run() {
+           return this.name;
+       },
+   };
+//1.마침표 표기법
+console.log(foo.name);
+console.log(foo.age);
+//2.대괄호 표기법
+console.log(foo['name']);
+console.log(foo['age']);
+//3.추가
+foo.gender="man";
+foo.nickname="bar";
+console.log(foo.gender);
+console.log(foo.nickname);
+//4.수정
+foo.name="bar";
+foo['age']=50;
+console.log(foo.name);
+console.log(foo.age);
+//5.삭제
+delete foo.nickname;
+delete foo['gender'];
+// console.log(foo.age);
+// console.log(foo.gender);
+//6.
+var dog={
+    name:"Fido",
+    weight:40,
+    breed:"mixed",
+    loves:["walks","fetching"],
+};
+console.log(dog);
+//7.
+const Book={
+    "이름": "Nature of Code",
+    "가격":30000,
+    "저자":"다니엘",
+    "ISBN":"920498230948",
+    "페이지":"620페이지",}
+console.log(Book);
+</script>
+
+
